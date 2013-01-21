@@ -44,7 +44,7 @@ for i in range(len(xyCoordsOuter)-1):
 myPart = myModel.Part(name='Part A', dimensionality=THREE_D,
     type=DEFORMABLE_BODY)
 # now we have a 2 dimentional drawing of a and now we give it a depth of 20 to make it 3d
-myPart.BaseSolidExtrude(sketch=mySketch, depth=20.0)
+myPart.BaseSolidExtrude(sketch=mySketch, depth=40.0)
 # create a view port in the gui so that we can take a look at what we created internaly
 myViewport = session.Viewport(name='Viewport for Model A',
     origin=(10, 10), width=150, height=100)
