@@ -16,3 +16,10 @@ mySketch.Line(point1 =myCoordinates[3],point2= myCoordinates[0])
 
 myPart.BaseSolidExtrude(sketch=mySketch,depth=20)
 # this can be done once our sketch is rdy
+
+# first Seed Part
+mdb.models['Tutorial Model'] .parts['Blech'].seedPart(size=2)
+# assign mesh control
+# mesh control only needed if we have to change the default settings
+# mesh part command is : myPart.generateMesh() or u use mdb.model['Tutorial Model'].parts['Blech'].generateMesh() 
+myPart.generateMesh()
